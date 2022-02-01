@@ -83,3 +83,25 @@ user.html
 </div>
 </body>
 </html>
+
+
+
+hello2.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body> 
+<p th:text="${msg}"></p>
+
+年齢：<p th:text="${userinfo.age}"></p>
+mail:<p th:text="${userinfo.mail}"></p>
+<br>
+mail:<p th:text="*{session.info.mail}"></p>
+</body>
+</html>
+
+
